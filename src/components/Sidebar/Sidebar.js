@@ -25,7 +25,7 @@ const people = [
 function SideBar() {
   return (
     <React.Fragment>
-      <h1>People also viewed</h1>
+      <h2>People also viewed</h2>
       {people.map((person, index) => {
         return SideBarConnection(person);
       })}

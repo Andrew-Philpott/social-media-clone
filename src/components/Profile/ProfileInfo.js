@@ -2,24 +2,28 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const profileInfo = {
-  name: "Tiffany",
+  name: "Stu Dent",
   connectionDegree: "1st",
   headline:
     "Coding Student at Epicodus | Junior Web Developer | Java and JavaScript | C#/.NET",
-  location: "Lynnwood, Washington",
-  connectionAmount: "28 connections",
+  location: "Washington",
+  connectionAmount: "42 connections",
   contactInfo: "Contact Info",
 };
 
 function ProfileInfo(props) {
   return (
     <React.Fragment>
-      <h1>{profileInfo.name}</h1>
-      <h2>{profileInfo.connectionDegree}</h2>
-      <h2>{profileInfo.headline}</h2>
-      <h2>{profileInfo.location}</h2>
-      <h3>{profileInfo.connectionAmount}</h3>
-      <h3>{profileInfo.contactInfo}</h3>
+      <h2>
+        {profileInfo.name}&nbsp;
+        {profileInfo.connectionDegree}
+      </h2>
+      <h4>{profileInfo.headline}</h4>
+      <h4>{profileInfo.location}</h4>
+      <h4>
+        {profileInfo.connectionAmount}&nbsp;
+        {profileInfo.contactInfo}
+      </h4>
     </React.Fragment>
   );
 }

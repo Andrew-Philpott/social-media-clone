@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 function ExperienceItem(props) {
   return (
     <React.Fragment>
-      <h1>{props.title}</h1>
-      <h2>{props.position}</h2>
-      <h2>{props.date}</h2>
-      <h2>{props.location}</h2>
-      <h3>{props.duties}</h3>
+      <h3>{props.title}</h3>
+      <h4>{props.position}</h4>
+      <h4>{props.date}</h4>
+      <h4>{props.location}</h4>
+      <h5>{props.duties}</h5>
     </React.Fragment>
   );
 }
