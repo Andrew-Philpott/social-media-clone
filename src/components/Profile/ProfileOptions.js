@@ -1,6 +1,8 @@
 import React from "react";
+import { Button, Select, InputLabel, FormControl } from "@material-ui/core";
 
 const moreDropDown = [
+  "More",
   "Share profile via message",
   "Save to PDF",
   "Give kudos",
@@ -24,12 +26,15 @@ const educationList = [
 function ProfileOptions() {
   return (
     <React.Fragment>
-      <button>Message</button>
-      <select>
-        {moreDropDown.map((option, index) => (
-          <option key={option}>{option}</option>
-        ))}
-      </select>
+      <Button>Message</Button>
+      <FormControl>
+        <Select id="more-select" native="true">
+          More
+          {moreDropDown.map((option, index) => (
+            <option>{option}</option>
+          ))}
+        </Select>
+      </FormControl>
       {educationList.map((edu, index) => (
         <div>
           <h2>{edu.logo}</h2>
